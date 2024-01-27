@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/insercion.css">
+    <link rel="icon" type="image/x-icon" href="./img/sunset-icon-6818308_960_720-removebg-preview.png">
+</head>
+<body>
+
+    <form action="" method="">  <!-- action se usa para enviar los datos a un ejecutable del backend -->
+                                <!-- method es el método de envio, por defecto: post, de forma oculta-->
+        <h2>Inserción de datos</h2>
+        <!-- Introducción de nombre -->
+        <label for="">Nombre: <span>*</span></label>
+        <input type="text" id="nombre" name="nombre" placeholder="escribe tu nombre" required><br>
+        <!-- Introducción de apellido -->
+        <label for="">Apellidos: <span>*</span></label>
+        <input type="text" id="apellidos" name="apellidos" placeholder="escribe tus apellidos" required><br>
+        <!-- Introducción de fecha -->
+        <label for="">Fecha ingreso: <span>*</span></label>
+        <input type="date" id="fechaIn" name="fechaIn" placeholder="escribe la fecha de ingreso" required><br>
+        <!-- Introducción de correo -->
+        <label for="">Correo Electrónico: <span>*</span></label>
+        <input type="email" id="email" name="email" placeholder="escribe tu email" required><br>
+        <!-- radio button se usa para elegir una entre varias alternativas -->
+        <label>Sexo: <span>*</span></label><br>
+        <input type="radio" name="sexo" id="Hombre" value="Hombre"><label for="Hombre">Hombre</label><br>
+        <input type="radio" name="sexo" id="Mujer" value="Mujer"><label for="Mujer">Mujer</label><br>
+        <input type="radio" name="sexo" id="Otra cosa" value="Otra cosa"><label for="Otra cosa">Otra cosa</label><br>
+        <!-- select -->
+        <label>Elija provincia: <span>*</span></label><br>
+        <select name="provincia" id="provincia">
+            <option>-- elige opcion </option>
+            <option value="29">Málaga</option>
+            <option value="13">Granada</option>
+            <option value="4">Almeria</option>
+        </select><br>
+        <!-- textarea -->
+        <label for="comentarios">Comentarios: </label><br>
+        <textarea name="coment" id="coment" cols="30" rows="4"></textarea><br>
+        <!-- Casilla de verificación -->
+        <input type="checkbox" name="terminos" id="terminos" required>
+        <label>Acepto los <a href="">términos y condiciones de privacidad </a><span>*</span></label><br>
+
+        <!-- botón enviar, obligatorio -->
+        <div class="botones">
+            <a id="insertar" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Insertar
+            </a>
+        </div>
+    </form>
+    
+</body>
+</html>
